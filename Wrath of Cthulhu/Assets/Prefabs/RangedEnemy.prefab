@@ -197,6 +197,8 @@ MonoBehaviour:
   enemyShooting: 0
   enemyDamage: 0
   enemyMadness: 0
+  enemyAlreadyHit: 0
+  cameFromSpawner: 0
 --- !u!212 &212970801307366536
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -22,7 +22,7 @@ public class MadnessBall : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player" && player.GetComponent<Animator>().GetBool("Blink") == false && player.GetComponent<Animator>().GetBool("Hit") == false && player.GetComponent<Player>().dead == false)
+        if (collision.gameObject.tag == "Player" && player.GetComponent<Animator>().GetBool("Blink") == false && player.GetComponent<Animator>().GetBool("Hit") == false && player.GetComponent<Player>().dead == false && player.GetComponent<Player>().reviving == false)
         {
             player.GetComponent<Player>().playerMadness += 50;
             player.GetComponent<Player>().sounds[1].Play();

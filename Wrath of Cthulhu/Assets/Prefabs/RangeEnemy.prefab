@@ -187,6 +187,7 @@ MonoBehaviour:
   - {fileID: 1627987009531400, guid: 2bb48ddf63ba4204e965337588ebb48f, type: 2}
   - {fileID: 1170061375301152, guid: 1da3534cca72f404198ca461d9a80d43, type: 2}
   - {fileID: 1163060148841434, guid: c00a01cd08a07474f848b29dd2ed6c5c, type: 2}
+  - {fileID: 1442989898883360, guid: 6b3f8e85198c3d14ba5e0c865b1d7272, type: 2}
   idle: 0
   attackMark: 0
   controlMeleeCollision: 0
@@ -197,6 +198,8 @@ MonoBehaviour:
   enemyShooting: 0
   enemyDamage: 0
   enemyMadness: 0
+  enemyAlreadyHit: 0
+  cameFromSpawner: 0
 --- !u!212 &212293567017382188
 SpriteRenderer:
   m_ObjectHideFlags: 1

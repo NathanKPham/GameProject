@@ -469,18 +469,21 @@ public class EnemyMove : MonoBehaviour {
             GameObject coin = Instantiate(gameObject.GetComponent<EnemyMove>().items[itemIndex], enposition, Quaternion.identity);
             Destroy(coin, 5);
         }*/
-       itemIndex = Random.Range(0, gameObject.GetComponent<EnemyMove>().items.Length);
-       GameObject coin = Instantiate(gameObject.GetComponent<EnemyMove>().items[itemIndex], enposition, Quaternion.identity);
-       
-       if (bossDied == true)
+
+       GameObject coin;
+       if (!bossDied)
         {
-            coin.GetComponent<Items>().value = 5;
+            itemIndex = Random.Range(0, gameObject.GetComponent<EnemyMove>().items.Length);
+            coin = Instantiate(gameObject.GetComponent<EnemyMove>().items[itemIndex], enposition, Quaternion.identity);
+            coin.GetComponent<Items>().value = 1;
         }
 
        else
         {
-            coin.GetComponent<Items>().value = 1;
+            coin = Instantiate(gameObject.GetComponent<EnemyMove>().items[3], enposition, Quaternion.identity);
+            coin.GetComponent<Items>().value = 5;
         }
+
        Destroy(coin, 5);
       
        Player.GetComponent<Player>().enemiesKilled++;
