@@ -13,5 +13,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: Morphine
   itemCode: morphine
-  cost: 8
-  description: Resets Mark's madness gj
+  cost: 5
+  description: Resets Mark's madness

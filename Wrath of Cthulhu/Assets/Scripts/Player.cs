@@ -240,7 +240,7 @@ public class Player : MonoBehaviour {
             }*/
         }
 
-        if (playerMadness >= 100f && dead == false)
+        if (playerMadness >= 100f && dead == false && playerHealth > 0f)
         {
             blink = false;
             revive = false;

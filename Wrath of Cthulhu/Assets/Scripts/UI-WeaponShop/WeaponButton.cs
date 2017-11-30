@@ -62,7 +62,7 @@ public class WeaponButton : MonoBehaviour
             {
                 case "elixir":
                     {
-                        if (!controlscript.elixir)
+                        if (!controlscript.elixir && controlscript.playerMadness < 100f)
                         { //if don't own elixir
                             pagescript.count -= controlscript.weapons[weaponNumber].cost;
                             controlscript.latestBuy = weaponNumber;
@@ -80,7 +80,7 @@ public class WeaponButton : MonoBehaviour
                     }
                 case "blink":
                     {
-                        if (!controlscript.blink)
+                        if (!controlscript.blink && controlscript.playerMadness < 100f)
                         { // if don't own eye
                             pagescript.count -= controlscript.weapons[weaponNumber].cost;
                             controlscript.latestBuy = weaponNumber;
@@ -97,7 +97,7 @@ public class WeaponButton : MonoBehaviour
                     }
                 case "explosive":
                     {
-                        if (!controlscript.explosive)
+                        if (!controlscript.explosive && controlscript.playerMadness < 100f)
                         { // if don't own explosive
                             pagescript.count -= controlscript.weapons[weaponNumber].cost;
                             controlscript.latestBuy = weaponNumber;
@@ -115,7 +115,7 @@ public class WeaponButton : MonoBehaviour
 
                 case "revive":
                     {
-                        if (!controlscript.revive)
+                        if (!controlscript.revive && controlscript.playerMadness < 100f)
                         { // if don't own revive
                             pagescript.count -= controlscript.weapons[weaponNumber].cost;
                             controlscript.latestBuy = weaponNumber;
